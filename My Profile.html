@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adedapo | Beginner Web Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="Adedapo - Beginner Web Developer. Building projects with HTML, CSS & JavaScript.">
+    <meta name="keywords" content="Adedapo, web developer, beginner web projects, HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Adedapo">
+    <meta property="og:title" content="Adedapo | Beginner Web Developer">
+    <meta property="og:description" content="Portfolio site showcasing web projects, skills, and contact information.">
+    <meta property="og:image" content="My Picture.jpg">
+    <meta property="og:url" content="https://your-site-link.netlify.app">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* ===== Reset & Base ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        header img {
+            width: 100px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+        header p {
+            font-style: italic;
+            color: #e0e0e0;
+        }
+
+        /* ===== Navigation ===== */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            background-color: #fff;
+            margin: 25px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.7s ease;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2, h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        img.profile-photo {
+            width: 120px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+        }
+
+        /* ===== Contact Links ===== */
+        .contact-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .contact-links a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 8px 0;
+            }
+            header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="My Picture.jpg" alt="Adedapo Portrait" onerror="this.style.display='none'">
+        <h1>Adebesin Abdulwahab</h1>
+        <p>Beginner Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://assessmenthtml.netlify.app" target="_blank" rel="noopener noreferrer">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="My Picture.jpg" alt="Portrait of Adedapo" class="profile-photo">
+            <p>I’m <strong>Adedapo</strong>, a beginner web developer learning <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I focus on building small projects to understand core web concepts, strengthen problem-solving skills, and develop consistency in tech.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Web development and coding practice</li>
+                <li>Exploring tech tools and software</li>
+                <li>Gaming and problem-solving challenges</li>
+                <li>Research and self-improvement</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me through the following platforms:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:adebesinabdulwahab8@gmail.com">adebesinabdulwahab8@gmail.com</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/AdebesinAb77373">My Twitter Profile</a></li>
+            </ul>
+
+            <div class="contact-links">
+                WhatsApp: <a href="https://wa.me/2349129315804?text=Hi%20there">Click here</a><br>
+                Telegram: <a href="https://t.me/dapo010?text=Hi%20there">Click here</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> <strong>Adedapo | Beginner Web Developer</strong></p>
+    </footer>
+
+    <script>
+        // Auto-update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Scroll animation
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
